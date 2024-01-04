@@ -170,7 +170,7 @@ function App() {
         <img ref={tc2} className="tcloud2" src={tcloud2} alt="" />
         <img className="bottom" src={bottom} alt="" />
         <div ref={c} className="copy">
-          <h1>ECSTACIA' 24</h1>
+          <h1>ECSTASIA' 24</h1>
         </div>
       </div>
     </div>
