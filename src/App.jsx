@@ -18,6 +18,16 @@ import ccloud1 from "./assets/ccloud1.png";
 import ccloud2 from "./assets/ccloud2.png";
 import tcloud1 from "./assets/tcloud1.png";
 import tcloud2 from "./assets/tcloud2.png";
+import bird1 from "./assets/bird1.png";
+import bird2 from "./assets/bird2.png";
+import bird3 from "./assets/bird3.png";
+import bird4 from "./assets/bird4.png";
+import bird5 from "./assets/bird5.png";
+import bird6 from "./assets/bird6.png";
+import grass1 from "./assets/grass1.png";
+import grass2 from "./assets/grass2.png";
+import grass3 from "./assets/grass3.png";
+import grass4 from "./assets/grass4.png";
 import bottom from "./assets/bottom.png";
 
 function App() {
@@ -39,6 +49,16 @@ function App() {
   const tc1 = useRef(null);
   const tc2 = useRef(null);
   const c = useRef(null);
+  const b1 = useRef(null);
+  const b2 = useRef(null);
+  const b3 = useRef(null);
+  const b4 = useRef(null);
+  const b5 = useRef(null);
+  const b6 = useRef(null);
+  const g1 = useRef(null);
+  const g2 = useRef(null);
+  const g3 = useRef(null);
+  const g4 = useRef(null);
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -59,92 +79,168 @@ function App() {
           y: "-=290",
         },
         0
-      )
+      );
       tl.to(
         e.current,
         {
           x: "+=590",
         },
         0
-      )
+      );
       tl.to(
         a.current,
         {
           x: "-=590",
         },
         0
-      )
+      );
       tl.to(
         cc1.current,
         {
           x: "+=570",
         },
         0
-      )
+      );
       tl.to(
         cc2.current,
         {
           x: "-=570",
         },
         0
-      )
+      );
       tl.to(
         tc1.current,
         {
           x: "+=370",
         },
         0.5
-      )
+      );
       tl.to(
         tc2.current,
         {
           x: "-=370",
         },
         0.5
-      )
+      );
       tl.to(
         c1.current,
         {
           y: "+=60",
         },
         0
-      )
+      );
       tl.to(
         c2.current,
         {
           x: "+=670",
         },
         0.5
-      )
+      );
       tl.to(
         c3.current,
         {
           x: "-=670",
         },
         0.5
-      )
+      );
       tl.to(
         ff1.current,
         {
           y: "-=340",
         },
         0.5
-      )
+      );
       tl.to(
         ff2.current,
         {
           y: "-=340",
         },
         0.5
-      )
+      );
       tl.to(
         c.current,
         {
-            y: "-360%",
-            opacity: 1
+          y: "-360%",
+          opacity: 1,
         },
         0.75
-    );
+      );
+      tl.to(
+        b1.current,
+        {
+          y: "+=50",
+          opacity: 1,
+        },
+        0.3
+      )
+      tl.to(
+        b2.current,
+        {
+          x: "+=50",
+          opacity: 1,
+        },
+        0.3
+      )
+      tl.to(
+        b3.current,
+        {
+          x: "+=50",
+          opacity: 1,
+        },
+        0.3
+      )
+      tl.to(
+        b4.current,
+        {
+          y: "+=50",
+          opacity: 1,
+        },
+        0.3
+      )
+      tl.to(
+        b5.current,
+        {
+          x: "+=50",
+          opacity: 1,
+        },
+        0.3
+      )
+      tl.to(
+        b6.current,
+        {
+          y: "+=50",
+          opacity: 1,
+        },
+        0.3
+      )
+      tl.to(
+        g1.current,
+        {
+          y: "-=50",
+        },
+        0.3
+      )
+      tl.to(
+        g2.current,
+        {
+          y: "-=50",
+        },
+        0.3
+      )
+      tl.to(
+        g3.current,
+        {
+          y: "-=50",
+        },
+        0.3
+      )
+      tl.to(
+        g4.current,
+        {
+          y: "-=50",
+        },
+        0.3
+      )
     });
     return () => ctx.revert();
   }, []);
@@ -168,6 +264,16 @@ function App() {
         <img ref={cc2} className="ccloud2" src={ccloud2} alt="" />
         <img ref={tc1} className="tcloud1" src={tcloud1} alt="" />
         <img ref={tc2} className="tcloud2" src={tcloud2} alt="" />
+        <img ref={b1} className="bird1" src={bird1} alt="" />
+        <img ref={b2} className="bird2" src={bird2} alt="" />
+        <img ref={b3} className="bird3" src={bird3} alt="" />
+        <img ref={b4} className="bird4" src={bird4} alt="" />
+        <img ref={b5} className="bird5" src={bird5} alt="" />
+        <img ref={b6} className="bird6" src={bird6} alt="" />
+        <img ref={g1} className="grass1" src={grass1} alt="" />
+        <img ref={g2} className="grass2" src={grass2} alt="" />
+        <img ref={g3} className="grass3" src={grass3} alt="" />
+        <img ref={g4} className="grass4" src={grass4} alt="" />
         <img className="bottom" src={bottom} alt="" />
         <div ref={c} className="copy">
           <h1>ECSTASIA' 24</h1>

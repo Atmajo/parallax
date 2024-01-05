@@ -97,6 +97,71 @@
     width: 10%;
 }
 
+.bird1 {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.bird2 {
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.bird3 {
+    top: 12%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.bird4 {
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.bird5 {
+    top: 35%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.bird6 {
+    top: 25%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.grass1 {
+    top: 59%;
+    left: 3%;
+    z-index: 2;
+}
+
+.grass2 {
+    top: 59%;
+    left: 37%;
+    z-index: 2;
+}
+
+.grass3 {
+    top: 59%;
+    left: 60%;
+    z-index: 2;
+}
+.grass4 {
+    top: 59%;
+    right: 3%;
+    z-index: 2;
+}
+
 .fort1  {
     top: 32%;
     left: 15%;
